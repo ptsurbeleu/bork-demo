@@ -8,16 +8,18 @@ For example, you can whip `git-credential-from-env` bash script that pulls crede
 
 ```
 #!/bin/sh
-echo "protocol=https"
-echo "host=github.com"
-echo "username=$(printenv GITHUB_USERNAME)"
-echo "password=$(printenv GITHUB_TOKEN)"
+echo &quot;protocol=https&quot;
+echo &quot;host=github.com&quot;
+echo &quot;username=$(printenv GITHUB_USERNAME)&quot;
+echo &quot;password=$(printenv GITHUB_TOKEN)&quot;
+
 ```
 Next you install the script into /usr/bin directory and configure git to use this helper with the following command:
 
 ```
 git config --global credential.helper from-env
+
 ```
 This is it! Now your automation script can carry out any Git operation and seamlessly pass authentication handshake without a single line of code.
 
-Done! ✅ 
+Done! ✅
