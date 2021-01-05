@@ -12,13 +12,11 @@ echo "protocol=https"
 echo "host=github.com"
 echo "username=$(printenv GITHUB_USERNAME)"
 echo "password=$(printenv GITHUB_TOKEN)"
-
 ```
 Next you install the script into /usr/bin directory and configure git to use this helper with the following command:
 
 ```
 git config --global credential.helper from-env
-
 ```
 This is it! Now your automation script can carry out any Git operation and seamlessly pass authentication handshake without a single line of code.
 
