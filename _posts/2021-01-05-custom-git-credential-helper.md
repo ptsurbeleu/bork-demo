@@ -14,11 +14,13 @@ echo "username=$(printenv GITHUB_USERNAME)"
 echo "password=$(printenv GITHUB_TOKEN)"
 
 
+
 ```
 Next you install the script into /usr/bin directory and configure git to use this helper with the following command:
 
 ```
 git config --global credential.helper from-env
+
 
 
 ```
