@@ -2,7 +2,7 @@
 layout: post
 title: Custom Git Credential Helper
 ---
-Surprisingly Git makes it incredibly easy to create and use your own credential helper. There is a simple contract and if you follow it then literally no time you can get it up & running.
+Surprisingly Git makes it incredibly easy to create and use your own credential helper. There is a simple contract and if you follow it then literally in no time you can get it up & running.
 
 For example, you can quickly put together `git-credential-from-env` bash script that pulls credentials from environment variables:
 
