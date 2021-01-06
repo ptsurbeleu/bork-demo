@@ -2,5 +2,7 @@
 layout: post
 title: Git Configuration
 ---
-## Heading
-Sample text goes here"!
+## Let me tell you something
+This is nuts! 🥜 
+
+
