@@ -8,12 +8,14 @@ gems: [jekyll-paginate, jekyll_pages_api_search]
 # relative_permalinks: true
 
 # Setup
-title:               '@pabloduo'
+title:               "@pabloduo"
 tagline:             ''
 description:         'Authored by <a href="https://twitter.com/pabloduo" target="_blank">@pabloduo</a>.'
 url:                 http://pabloduo.com
 baseurl:             ''
 paginate:            5
+uri:                'https://github.com/ptsurbeleu/bork-demo.git'
+tracking_branch:    'main'
 
 # About/contact
 author:
