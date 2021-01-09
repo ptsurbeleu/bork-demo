@@ -8,4 +8,4 @@ We, human beings like things that work.
 
 In this new year of **2021** I wish you all the things that work. Things that work for your business, your career, your family, your marriage, your wellbeing, your wealth and of course that work for **y-o-u-r-s-e-l-f**.
 
-Happy New Year 2021! 
+Happy New Year!
