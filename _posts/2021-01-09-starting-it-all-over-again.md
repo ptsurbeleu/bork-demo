@@ -6,6 +6,6 @@ Some things just work, others work better while the rest is barely holding up to
 
 We, human beings like things that work.
 
-In this new year of **2021** I wish you, dear reader, all the things that work. Things that work for your business, your career, your family, your marriage, your wellbeing, your wealth and of course that work for **y-o-u-r-s-e-l-f**.
+In this new year of **2021** I wish you, dear reader, all the things that work. Things that work for your family, your business, your marriage, your career, your wellbeing, your wealth and of course that work for **y-o-u-r-s-e-l-f**.
 
 Happy New Year!
