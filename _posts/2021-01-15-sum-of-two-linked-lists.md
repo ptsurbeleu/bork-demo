@@ -32,20 +32,15 @@ public class Solution {
 }
 ```
 
-Let me explain a few things this snippet uses to simplify the code. 
+
+Let me explain a few things this snippet uses to simplify the code.
 
 First of all, it tucked away `?:` ternary conditional operator in `nv()`, eq. *node value* helper function and **packed 3 lines into a 1-line statement**:
 
 `int sum = carry + nv(lhs) + nv(rhs);`
 
-Next, the snippet packed new node `.ctor` call in cv(), eq. carry value helper function combined with multi-assignment 1-line statement and compressed 2 lines into a 1-line statement as well:
+Next, the snippet packed new node `.ctor` call in `cv()`, eq. *carry value* helper function combined with multi-assignment and **compressed 2 lines into a 1-line statement** as well:
 
 `head = head.next = cv(sum);`
 
 The rest of the code seems to be trivial, calculating the carry and moving along the specified linked lists.
-
-
-
-
-
-
