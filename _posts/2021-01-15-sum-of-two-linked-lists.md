@@ -2,7 +2,7 @@
 layout: post
 title: Sum of two linked lists
 ---
-I was browsing LeetCode the other day and stumbled upon a problem where you need to write a function that takes two linked lists with nodes in reverse order, eq. `1 ~> 2 ~> 3` and `4 ~> 5 ~> 6` (*each node has value `0-9`*) and outputs a linked list with the sum, eq. `5 ~> 7 ~> 9`. 
+I was browsing LeetCode the other day and stumbled upon a problem where you need to write a function that takes two linked lists with nodes in reverse order, eq. `1 ~> 2 ~> 3` and `4 ~> 5 ~> 6` (*each node has value `0-9`*) and outputs a linked list with the sum, eq. `5 ~> 7 ~> 9`.
 
 After some back & forth here is the snippet accepted as an answer:
 
@@ -29,7 +29,9 @@ public class Solution {
 
     private int tens(int n)
         => n / 10;
-}```
+}
+```
+
 Let me explain a few things this snippet uses to simplify the code. 
 
 First of all, it tucked away `?:` ternary conditional operator in `nv()`, eq. *node value* helper function and **packed 3 lines into a 1-line statement**:
@@ -41,6 +43,8 @@ Next, the snippet packed new node `.ctor` call in cv(), eq. carry value helper f
 `head = head.next = cv(sum);`
 
 The rest of the code seems to be trivial, calculating the carry and moving along the specified linked lists.
+
+
 
 
 
