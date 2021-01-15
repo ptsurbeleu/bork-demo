@@ -9,12 +9,12 @@ After some back & forth here is the snippet accepted as an answer:
 ```
 public class Solution {
     public ListNode AddTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode lhs = l1, rhs = l2, nn = cv(0), head = nn;
+        ListNode lhs = l1, rhs = l2, nn = nnd(0), head = nn;
         int carry = 0;
         while (lhs != null || rhs != null || carry > 0) {
             int sum = carry + nv(lhs) + nv(rhs);
-            carry = tens(sum);
-            head = head.next = cv(sum);
+            carry = sum / 10;
+            head = head.next = nnd(sum % 10);
             if (lhs != null) lhs = lhs.next;
             if (rhs != null) rhs = rhs.next;
         }
@@ -24,11 +24,8 @@ public class Solution {
     private int nv(ListNode n)
         => n != null ? n.val : 0;
 
-    private ListNode cv(int n)
-        => new ListNode(n % 10);
-
-    private int tens(int n)
-        => n / 10;
+    private ListNode nnd(int n)
+        => new ListNode(n);
 }
 ```
 
@@ -39,8 +36,8 @@ First of all, it tucked away `?:` ternary conditional operator in `nv()`, eq. *n
 
 `int sum = carry + nv(lhs) + nv(rhs);`
 
-Next, the snippet packed new node `.ctor` call in `cv()`, eq. *carry value* helper function combined with multi-assignment and **compressed 2 lines into a 1-line statement** as well:
+Next, the snippet packed new node `.ctor` call in `nnd()`, eq. *new node* helper function combined with multi-assignment and **compressed 2 lines into a 1-line statement** as well:
 
-`head = head.next = cv(sum);`
+`head = head.next = nnd(sum % 10);`
 
 The rest of the code seems to be trivial, calculating the carry and moving along the specified linked lists.
