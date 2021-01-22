@@ -4,7 +4,7 @@ title: Sum of two linked lists
 ---
 I was browsing LeetCode the other day and stumbled upon a problem where you need to write a function that takes two linked lists with nodes in reverse order, eq. `1 ~> 2 ~> 3` and `4 ~> 5 ~> 6` (*each node has value `0-9`*) and outputs a linked list with the sum, eq. `5 ~> 7 ~> 9`.
 
-After some back & forth here is the snippet accepted as an answer:
+After some back & forth here is **C#** snippet accepted as an answer:
 
 ```
 public class Solution {
