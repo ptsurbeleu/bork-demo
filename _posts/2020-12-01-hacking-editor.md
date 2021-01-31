@@ -5,6 +5,10 @@ title: Hacking Editor
 Hello there!
 
 ```
+def noop do
+end
+```
+```
 another code block
 goes here...
 ```
