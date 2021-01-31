@@ -2,6 +2,11 @@
 layout: post
 title: Hacking Editor
 ---
+Hello there!
+
 ```
-Hello there
+def hello_world
+  puts "Hello World!"
+end
 ```
+See you!
