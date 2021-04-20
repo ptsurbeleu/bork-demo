@@ -22,4 +22,13 @@ Date of `1971-01-01` was **Friday**, therefore `+4` in all calculations since **
 ```
 private int DaysSince1971(string date) => (...) + 4;
 ```
+How to avoid swapping smaller and larger dates/days:
+
+```
+Math.Abs(DaysSince1971(...) - DaysSince1971(...);
+
+or
+
+Math.Max(mm, nn) - Math.Min(mm, nn);
+```
 ...
